@@ -2,7 +2,7 @@
 
 This project uses Azure Cognative Serivces to recognise speech, sending voice input to the Azure Open AI Service. The resulting text response is replayed to the user using speech synthesis. This provides a speech-to-speech interface to Open AI.
 
-To aid the conversational flow persona's can be defined. These provide Open AI with the context of the conversation as was as a voice and style for the speech sythnesis. 
+To aid the conversational flow persona's can be defined. These provide Open AI with the context of the conversation and a voice and style for the speech sythnesis. 
 
 To use this code you'll need to have deployed an Azure Open AI Service with a model, as well have provisioned an Azure Cognative Service for speech. 
 
