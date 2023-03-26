@@ -10,7 +10,7 @@ speech_key                  = 'YOUR_AZURE_SPEECH_API_KEY'
 speech_region               = 'YOUR_AZURE_REGION_FOR_THE_SPEECH_RESOURCE'
 speech_recognition_language = "SPEECH_RECOGNITION_LANGUAGE"
 
-# The persona we want to use, this selectes the synth voice, and the prompt for the ai model.
+# The persona we want to use, this selects the synth voice, and the prompt for the ai model.
 persona_name = "HAL" 
 
 # Dictionary of the personas.
