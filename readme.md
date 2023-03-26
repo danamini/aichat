@@ -8,7 +8,6 @@ To use this code you'll need to have deployed an Azure Open AI Service with a mo
 
 ## Table of Contents
 
-- [Project Title](#project-title)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
@@ -31,7 +30,9 @@ Install the Python dependences.
 
 ### Installation
 
-Install the 
+Setup Azure Open AI Service, and Azure Speech Service.
+Setup coresponding keys and URLs in config.py
+Run python aichat.py at start a conversation!
 
 ## Usage
 
@@ -55,9 +56,9 @@ The following dependencies required for the project to run:
 
 Contributions are welcome! Here are some ways you can contribute to this project:
 
-- **Bug reports**: If you find any bugs or issues with the project, please open a new issue on the [issue tracker](https://github.com/yourusername/yourproject/issues).
+- **Bug reports**: If you find any bugs or issues with the project, please open a new issue on the [issue tracker](https://github.com/danamini/aichat/issues).
 
-- **Feature requests**: If you have an idea for a new feature or improvement, please open a new issue on the [issue tracker](https://github.com/yourusername/yourproject/issues).
+- **Feature requests**: If you have an idea for a new feature or improvement, please open a new issue on the [issue tracker](https://github.com/danamini/aichat/issues).
 
 - **Code contributions**: If you would like to contribute code to the project, please fork the repository and submit a pull request. Before submitting a pull request.
 
