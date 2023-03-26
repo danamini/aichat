@@ -14,7 +14,6 @@ The original code was created from snippets from https://learn.microsoft.com/en-
 - [Usage](#usage)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
@@ -64,8 +63,6 @@ Contributions are welcome! Here are some ways you can contribute to this project
 
 - **Code contributions**: If you would like to contribute code to the project, please fork the repository and submit a pull request. Before submitting a pull request.
 
-By contributing to this project, you agree to abide by the [code of conduct](link to your project's code of conduct).
-
 ### Getting Started
 
 If you're new to contributing to open source projects, check out the following resources:
@@ -74,8 +71,3 @@ If you're new to contributing to open source projects, check out the following r
 - [How to create a pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request)
 
 Thank you for your interest in contributing to this project.
-
-## License
-
-Information about the license for the project. 
-
