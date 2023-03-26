@@ -6,6 +6,8 @@ To aid the conversational flow persona's can be defined. These provide Open AI w
 
 To use this code you'll need to have deployed an Azure Open AI Service with a model, as well have provisioned an Azure Cognative Service for speech. 
 
+The original code was created from snippets from https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/openai-speech
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
