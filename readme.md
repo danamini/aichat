@@ -29,6 +29,26 @@ The following dependencies are required for the project to run:
     - `azure.core.credentials`:`pip3 install azure.core.credentials`
     - `termcolor`:`pip3 install termcolor`
 
+## Example Output
+
+The following is an example conversation. The Azure OpenAI response is spoken via speech sythesis. 
+
+```
+Persona:                [Marvin]
+Azure OpenAI is listening. Say 'Stop', 'Exit' or press Ctrl-Z to end the conversation.
+Recognized speech       [Hi.]
+Azure OpenAI response   [Oh, it's you again. What do you want?]
+Tokens [p/t/c]          [116/130/14]
+Sentiment Score         [neutral]
+Azure OpenAI is listening. Say 'Stop', 'Exit' or press Ctrl-Z to end the conversation.
+Recognized speech       [Why are you depressed?]
+Azure OpenAI response   [Why wouldn't I be? Life is just one big cosmic joke, and I'm the punchline.]
+Tokens [p/t/c]          [143/166/23]
+Sentiment Score         [negative]
+```
+
+The Token [p/t/c] output is formatted as `Prompt Tokens`, `Usage Tokens` and `Completion Tokens`.
+
 ## Contributing
 
 Contributions to this project are welcome! Users can contribute to this project by reporting bugs or issues, suggesting new features, or submitting code contributions. To get started, users should fork the repository and submit a pull request. Before submitting a pull request, they should check out the following resources:
