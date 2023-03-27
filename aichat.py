@@ -23,7 +23,7 @@ speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, audi
 persona = config.personas[config.persona_name]
 voice = persona["voice"]
 
-# is a voice style is provided get the value
+# If a voice style is provided get the style name.
 voice_style = ''
 if 'style' in persona: 
     voice_style = persona["style"]
@@ -31,11 +31,11 @@ if 'style' in persona:
 # Set the AI's initial system message, giving it some context for the conversation
 system_message = persona["system_message"]
 
-# Setup speech synthesis.
+# Setup speech synthesis, this is via the Azure Speech Service
 speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config = speech_config, audio_config = audio_config)
 
-# Setup sentiment analysis.
-text_analytics_client = TextAnalyticsClient(config.endpoint, AzureKeyCredential(config.key))
+# Setup sentiment analysis, this is via the Azure Cognitive Service for Language
+text_analytics_client = TextAnalyticsClient(config.cognitive_endpoint, AzureKeyCredential(config.cognitive_key))
 
 # Prompts Azure OpenAI with a request and synthesizes the response.
 def ask_openai(prompt):
@@ -44,11 +44,11 @@ def ask_openai(prompt):
     response = openai.ChatCompletion.create(
         engine=config.openai_deployment_id,
         messages = prompt, 
-        temperature=1,
-        max_tokens=400,
-        top_p=0.95,
-        frequency_penalty=0,
-        presence_penalty=0,
+        temperature = 1,
+        max_tokens = 400,
+        top_p = 0.95,
+        frequency_penalty = 0,
+        presence_penalty = 0,
         stop=None)
 
     # extract the ai text response, and clean up the text.

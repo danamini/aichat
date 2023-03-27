@@ -3,12 +3,16 @@ openai_api_base      = 'https://YOUR_OPEN_AI_RESOURCE_NAME.openai.azure.com/'
 openai_api_key       = 'YOUR_OPEN_AI_API_KEY' 
 openai_api_type      = 'azure'
 openai_api_version   = '2023-03-15-preview'
-openai_deployment_id = 'GPT35-TURBO' # The name of of your deployment model 
+openai_deployment_id = 'GPT35-TURBO' # The name of of your deployment model, this works well for conversational AI.
 
-# Setup for the Azure Speech api
+# Setup for the Azure Speech Service
 speech_key                  = 'YOUR_AZURE_SPEECH_API_KEY'
 speech_region               = 'YOUR_AZURE_REGION_FOR_THE_SPEECH_RESOURCE'
 speech_recognition_language = "SPEECH_RECOGNITION_LANGUAGE"
+
+# Azure Cognitive Service for Language - Text Analytics
+cognitive_endpoint    = "YOUR_COGNITIVE_LANGUAGE_RESOURCE.cognitiveservices.azure.com/"
+cognitive_key         = 'YOUR_COGNITIVE_LANGUAGE_KEY'
 
 # The persona we want to use, this selects the synth voice, and the prompt for the ai model.
 persona_name = "HAL" 
@@ -40,6 +44,3 @@ ssml = "<speak version='1.0' xml:lang='en-US' xmlns='http://www.w3.org/2001/10/s
            "$text$" \
            "</mstts:express-as>" \
            "</voice></speak>"
-
-endpoint = "YOUR_SPEECH_RESOURCE.cognitiveservices.azure.com/"
-key = 'YOUR_SPEECH_KEY'
