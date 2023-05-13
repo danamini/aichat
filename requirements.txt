@@ -1,4 +1,3 @@
 openai
 azure-cognitiveservices-speech 
-azure.core.credentials
 termcolor
