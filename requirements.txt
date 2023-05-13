@@ -1,3 +1,4 @@
+azure.core
 openai
 azure-cognitiveservices-speech 
 termcolor

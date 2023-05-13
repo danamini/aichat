@@ -2,13 +2,13 @@
 
 Azure Open AI Conversational Speech-to-Speech is a GitHub project that enables users to interact with a conversational system using their voice. The system uses Azure Cognitive Services to recognize speech and sends the voice input to the Azure Open AI Service. The resulting text response is replayed to the user using speech synthesis, providing a speech-to-speech interface to Open AI. Azure Sentiment analysis is also performed on the Open AI response. 
 
-This code extends the sample code found here https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/openai-speech?tabs=macos&pivots=programming-language-python which is a scenario deep-dirve.
+This code extends the sample code found here https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/openai-speech?tabs=macos&pivots=programming-language-python which is a scenario deep-dive. This code adds sentement analysis, and personas, with voice customisation. 
 
 ## Getting Started
 
-To get started with this project, users will need to have access to an Azure Open AI Service and an Azure Speech Service. They should set up the corresponding keys and URLs in the config.py file and install the required dependencies, including the `openai`, `azure-cognitiveservices-speech`, `azure.core.credentials`, and `termcolor` packages. 
+To get started with this project, users will need to have access to an Azure Open AI Service and an Azure Speech Service. They should set up the corresponding keys and URLs in the config.py file and install the required dependencies, including the `openai`, `azure.core`, and `termcolor` packages. 
 
-- As a minimum in `config.py` change the following values before running `aichat.py`:
+- As a minimum in `config.py` change the following values before running `app.py`:
     - openai_api_base             = 'https://YOUR_OPEN_AI_RESOURCE_NAME.openai.azure.com/'
     - openai_api_key              = 'YOUR_OPEN_AI_API_KEY' 
     - speech_key                  = 'YOUR_AZURE_SPEECH_API_KEY'
@@ -21,14 +21,15 @@ To get started with this project, users will need to have access to an Azure Ope
 
 To use this code, users should set the appropriate persona name by setting the value for `persona_name`. This value must match an entry in the persona dictionary, which is also in the `config.py` file. Users can add new personal entries in the dictionary and set the persona name to test. 
 
+Run by typing the following command in a terminal `python app.py`
+
 ## Dependencies
 
 The following dependencies are required for the project to run:
 
 - Python packages:
     - `openai`: `pip3 install openai`
-    - `azure-cognitiveservices-speech `: `pip3 install azure-cognitiveservices-speech`
-    - `azure.core.credentials`:`pip3 install azure.core.credentials`
+    - `azure.core`:`pip3 install azure.core`
     - `termcolor`:`pip3 install termcolor`
 
 You can install the required Python libraries by running:
