@@ -1,12 +1,22 @@
-# Azure Open AI Conversational Speech-to-Speech
+# Azure OpenAI Conversational Speech-to-Speech
 
-Azure Open AI Conversational Speech-to-Speech is a GitHub project that enables users to interact with a conversational system using their voice. The system uses Azure Cognitive Services to recognize speech and sends the voice input to the Azure Open AI Service. The resulting text response is replayed to the user using speech synthesis, providing a speech-to-speech interface to Open AI. Azure Sentiment analysis is also performed on the Open AI response. 
+Azure OpenAI Conversational Speech-to-Speech is a simple project that enables users to interact with a conversational generative AI using their voice and hearing the reply via speech synthesis.
 
-This code extends the sample code found here https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/openai-speech?tabs=macos&pivots=programming-language-python which is a scenario deep-dive. This code adds sentement analysis, and personas, with voice customisation. 
+The project is intended to demonstrate how easy natural language conversation can be made with an Large Language Models like GPT-4, using voice recognition to capture, and voice synthesis for AI responses.  
+
+![image](https://github.com/danamini/aichat/assets/26843411/4a5f4e63-3b0f-4964-90b0-36448e0b72f6)
+
+The system uses Azure Cognitive Services to recognize speech and sends the voice input to the Azure Open AI Service. The resulting text response is replayed to the user using speech synthesis, providing a speech-to-speech interface to OpenAI. Azure Sentiment analysis is also performed on the OpenAI response.
+
+The solution can be configured to use different OpenAI models such as GPT-3.5 TURBO and GPT-4. This will depend on the Azure OpenAI Service provisioned in your tenant. You can use Azure OpenAI Studio to configure the deployments.
+
+This code extends the sample code found [here](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/openai-speech?tabs=macos&pivots=programming-language-python) on Microsoft Learn. This code adds personas configure sentement analysis, and personas, with voice customisation. 
 
 ## Getting Started
 
-To get started with this project, users will need to have access to an Azure Open AI Service and an Azure Speech Service. They should set up the corresponding keys and URLs in the config.py file and install the required dependencies, including the `openai`, `azure.core`, and `termcolor` packages. 
+You will need Python installed on a PC or Mac. 
+
+To get started with this project, users will need to have access to an Azure OpenAI Service and an Azure Speech Service. They should set up the corresponding keys and URLs in the config.py file and install the required dependencies, including the `openai`, `azure.core`, and `termcolor` packages. 
 
 - As a minimum in `config.py` change the following values before running `app.py`:
     - openai_api_base             = 'https://YOUR_OPEN_AI_RESOURCE_NAME.openai.azure.com/'
@@ -17,23 +27,23 @@ To get started with this project, users will need to have access to an Azure Ope
     - cognitive_endpoint          = "https://YOUR_AZURE_COGNATIVE_SERVICE_FOR_LANGUAGE_ENDPOINT.cognitiveservices.azure.com/"
     - cognitive_key               = 'YOUR_AZURE_COGNATIVE_SERVICE_FOR_LANGUAGE_KEY'
 
-## Usage
-
-To use this code, users should set the appropriate persona name by setting the value for `persona_name`. This value must match an entry in the persona dictionary, which is also in the `config.py` file. Users can add new personal entries in the dictionary and set the persona name to test. 
-
-Run by typing the following command in a terminal `python app.py`
-
 ## Dependencies
 
-The following dependencies are required for the project to run:
+The following dependencies are required for the project to run.
+
+You can install the required Python libraries by running:
+`pip install -r requirements.txt`
 
 - Python packages:
     - `openai`: `pip3 install openai`
     - `azure.core`:`pip3 install azure.core`
     - `termcolor`:`pip3 install termcolor`
 
-You can install the required Python libraries by running:
-`pip install -r requirements.txt`
+## Usage
+
+To use this code, users should set the appropriate persona name by setting the value for `persona_name`. This value must match an entry in the persona dictionary, which is also in the `config.py` file. Users can add new personal entries in the dictionary and set the persona name to test. 
+
+Run by typing the following command in a terminal `python app.py`
 
 ## Example Output
 
@@ -53,13 +63,19 @@ Tokens [p/t/c]          [143/166/23]
 Sentiment Score         [negative]
 ```
 
-The Token [p/t/c] output is formatted as `Prompt Tokens`, `Usage Tokens` and `Completion Tokens`.
+Calls to the Open AI Service use [tokens](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them). The token's use are formatted as [p/t/c] to show `Prompt Tokens`, `Usage Tokens` and `Completion Tokens`.
 
 ## Contributing
 
-Contributions to this project are welcome! Users can contribute to this project by reporting bugs or issues, suggesting new features, or submitting code contributions. To get started, users should fork the repository and submit a pull request. Before submitting a pull request, they should check out the following resources:
+Contributions to this project are welcome! There are loads of possible improvements and tweaks. There are many othere Azure AI Services, so any ideas for new services, or code improvements, such as:
+- Live Language translation. 
+- Change prosody of speach dynamically on response. It is currently defined per persona.
+- Running fully in browser. Speech API is available in JavaScript. 
+- Integration with Embeddings Redis cache solution for private document datastore searching.
+
+Users can contribute to this project by reporting bugs or issues, suggesting new features, or submitting code contributions. To get started, users should fork the repository and submit a pull request. Before submitting a pull request, they should check out the following resources:
 
 - [How to contribute to open source](https://opensource.guide/how-to-contribute/)
 - [How to create a pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request)
 
-Thank you for your interest in contributing to this project!
+Thank you for your interest in contributing to this project.
