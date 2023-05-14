@@ -14,9 +14,9 @@ This code extends the sample code found [here](https://learn.microsoft.com/en-us
 
 ## Getting Started
 
-You will need Python installed on a PC or Mac. 
+You will need Python installed on a Windows PC or Mac. 
 
-To get started with this project, users will need to have access to an Azure OpenAI Service and an Azure Speech Service. They should set up the corresponding keys and URLs in the config.py file and install the required dependencies, including the `openai`, `azure.core`, and `termcolor` packages. 
+To get started with this project, users will need to have access to an Azure OpenAI Service and an Azure Speech Service. You should set up the corresponding keys and URLs in the config.py file and install the required dependencies, including the `openai`, `azure.core`, and `termcolor` packages. 
 
 - As a minimum in `config.py` change the following values before running `app.py`:
     - openai_api_base             = 'https://YOUR_OPEN_AI_RESOURCE_NAME.openai.azure.com/'
@@ -29,7 +29,7 @@ To get started with this project, users will need to have access to an Azure Ope
 
 ## Dependencies
 
-The following dependencies are required for the project to run.
+There are some packages that the app requires to run. 
 
 You can install the required Python libraries by running:
 `pip install -r requirements.txt`
@@ -42,9 +42,11 @@ You can install the required Python libraries by running:
 
 ## Usage
 
-To use this code, users should set the appropriate persona name by setting the value for `persona_name`. This value must match an entry in the persona dictionary, which is also in the `config.py` file. Users can add new personal entries in the dictionary and set the persona name to test. 
+The app has been run on Mac and Windows ARM 64, and Windows Intel x64. Linux untested but possible.
 
 Run by typing the following command in a terminal `python app.py`
+
+if you want to set a different persona update the value for `persona_name` in `config.py`. This value must match an entry in the persona dictionary, which is also in the `config.py` file. Users can add new personal entries in the dictionary and set the persona name to test. 
 
 ## Example Output
 
