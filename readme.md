@@ -2,7 +2,7 @@
 
 Azure OpenAI Conversational Speech-to-Speech is a simple project that enables users to interact with a conversational generative AI using their voice and hearing the reply via speech synthesis.
 
-The project is intended to demonstrate how easy natural language conversation can be made with an Large Language Models like GPT-4, using voice recognition to capture, and voice synthesis for AI responses.  
+The project is intended to demonstrate how easy natural language conversation can be made with Large Language Models like GPT-4, using voice recognition to capture, and voice synthesis for AI responses.  
 
 ![image](https://github.com/danamini/aichat/assets/26843411/4a5f4e63-3b0f-4964-90b0-36448e0b72f6)
 
