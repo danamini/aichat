@@ -10,7 +10,7 @@ The system uses Azure Cognitive Services to recognize speech and sends the voice
 
 The solution can be configured to use different OpenAI models such as GPT-3.5 TURBO and GPT-4. This will depend on the Azure OpenAI Service provisioned in your tenant. You can use Azure OpenAI Studio to configure the deployments.
 
-This code extends the sample code found [here](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/openai-speech?tabs=macos&pivots=programming-language-python) on Microsoft Learn. This code adds personas configure sentement analysis, and personas, with voice customisation. 
+This code extends the sample code found [here](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/openai-speech?tabs=macos&pivots=programming-language-python) on Microsoft Learn. Additions include personas with voice customisation and sentement analysis.
 
 ## Getting Started
 
