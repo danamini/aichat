@@ -35,9 +35,10 @@ You can install the required Python libraries by running:
 `pip install -r requirements.txt`
 
 - Python packages:
-    - `openai`: `pip3 install openai`
-    - `azure.core`:`pip3 install azure.core`
-    - `termcolor`:`pip3 install termcolor`
+    - `azure.core`
+    - `openai`
+    - `azure-cognitiveservices-speech` 
+    - `termcolor` (for text colouring)
 
 ## Usage
 
@@ -78,4 +79,4 @@ Users can contribute to this project by reporting bugs or issues, suggesting new
 - [How to contribute to open source](https://opensource.guide/how-to-contribute/)
 - [How to create a pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request)
 
-Thank you for your interest in contributing to this project.
+Hope this is useful, and can spark ideas for use cases for these types of easy to consume AI services in your organisation or area of interest.
