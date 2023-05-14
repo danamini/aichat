@@ -63,7 +63,7 @@ Tokens [p/t/c]          [143/166/23]
 Sentiment Score         [negative]
 ```
 
-Calls to the Open AI Service use [tokens](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them). The token's use are formatted as [p/t/c] to show `Prompt Tokens`, `Usage Tokens` and `Completion Tokens`.
+Calls to the Open AI Service use [tokens](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them). The token's use is formatted as [p/t/c] to show `Prompt Tokens`, `Usage Tokens` and `Completion Tokens`.
 
 ## Contributing
 
