@@ -1,4 +1,6 @@
-azure.core
+azure-core
+azure-identity
+azure-ai-textanalytics
+azure-cognitiveservices-speech
 openai
-azure-cognitiveservices-speech 
 termcolor
