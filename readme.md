@@ -72,7 +72,7 @@ Calls to the Open AI Service use [tokens](https://help.openai.com/en/articles/49
 
 Contributions to this project are welcome! There are loads of possible improvements and tweaks. There are many othere Azure AI Services, so any ideas for new services, or code improvements, such as:
 - Live Language translation. 
-- Change prosody of speach dynamically on response. It is currently defined per persona.
+- Change prosody of speech dynamically on response. It is currently defined per persona.
 - Running fully in browser. Speech API is available in JavaScript. 
 - Integration with Embeddings Redis cache solution for private document datastore searching.
 
